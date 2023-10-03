@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<head lang="pt-BR">
+  <meta charset="utf-8" />
+  <title>Layouts</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* Style the header */
+    header {
+      background-color: #666;
+      padding: 30px;
+      text-align: center;
+      font-size: 35px;
+      color: white;
+    }
+
+    /* Create two columns/boxes that floats next to each other */
+    nav {
+      float: left;
+      width: 30%;
+
+      background: #ccc;
+      padding: 20px;
+    }
+
+    /* Style the list inside the menu */
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    article {
+      float: left;
+      padding: 20px;
+      width: 70%;
+      background-color: #f1f1f1;
+    }
+
+    /* Clear floats after the columns */
+    section::after {
+      background: #ccc;
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Style the footer */
+    footer {
+      background-color: #777;
+      padding: 10px;
+      text-align: center;
+      color: white;
+    }
+
+    /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+    @media (max-width: 600px) {
+      nav,
+      article {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>Curso Front-end Home</h2>
+  </header>
+  <section>
+    <nav>
+      <ul>
+        <li><a href="./05-layouts.html">Home</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="./06-formularios.html">Contato</a></li>
+      </ul>
+    </nav>
+    <article>
+      <h1>título do artigo</h1>
+      <p>
+        <b>Lorem ipsum dolor sit amet</b>, <i>consectetur adipiscing elit.</i>
+        <del>Fusce nec egestas nibh, vel consequat justo.</del> Quisque lobortis
+        ante dui, eget gravida purus varius sed. Sed vitae iaculis arcu, vel
+        aliquam lacus. Aliquam erat volutpat. Nunc porttitor aliquet elit sit
+        amet blandit. Pellentesque cursus bibendum congue. Ut vel elementum
+        eros. Praesent at nisl justo. Maecenas ornare tempor erat a tincidunt.
+        Nam massa diam, convallis quis lectus ac, fermentum fermentum nisi.
+        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+        cubilia curae; Fusce mattis sollicitudin felis eget semper. Mauris
+        mattis lacus nulla, sit amet iaculis nisi facilisis at. Morbi vitae
+        sapien vel est porttitor tincidunt. Quisque quis vehicula libero.
+      </p>
+      <blockquote>
+        "Orci varius natoque penatibus et magnis dis parturient montes, nascetur
+        ridiculus mus. Duis sit amet dictum ex. Cras eu dui vitae magna finibus
+        volutpat vitae eget leo. Nam ex arcu, gravida id vehicula vel,
+        condimentum aliquet nisi. In hac habitasse platea dictumst. Aenean
+        euismod ac leo ut congue. Morbi luctus felis vel risus egestas feugiat.
+        Morbi congue aliquet condimentum. Vivamus ut pharetra diam. Pellentesque
+        habitant morbi tristique senectus et netus et malesuada fames ac turpis
+        egestas. Morbi ullamcorper elit ante. Nulla aliquet pulvinar ultrices.
+        Quisque egestas, magna ut varius pretium, eros diam ornare augue, vel
+        pretium eros augue ac magna. Nam tristique commodo magna vitae
+        ultricies. Ut dictum arcu non turpis ornare, non imperdiet justo
+        imperdiet. Nulla volutpat libero egestas suscipit auctor."
+      </blockquote>
+    </article>
+  </section>
+  <footer>
+    <p>Desenvolvido por Miguel</p>
+  </footer>
+</body>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<head lang="pt-BR">
+  <meta charset="utf-8" />
+  <title>Layouts</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="./CSS/Style1.css" />
+</head>
+<body>
+  <header>
+    <h2>Curso front-end Formulário</h2>
+  </header>
+  <section>
+    <nav>
+      <ul>
+        <li><a href="./05-layouts.html">Home</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="./06-formularios.html">Contato</a></li>
+      </ul>
+    </nav>
+    <article>
+      <h1>Contato</h1>
+      <p>Preencha os campos abaixo</p>
+      <form method="post">
+        <div>
+          <label class="options" for="nome">Nome</label>
+          <input
+            type="text"
+            name="nome"
+            id="nome"
+            placeholder="Digite seu nome"
+          />
+        </div>
+        <div>
+          <label class="options" for="email">E-mail</label>
+          <input
+            type="text"
+            name="email"
+            id="email"
+            placeholder="Digite seu e-mail"
+          />
+        </div>
+        <div>
+          <label class="options" for="mensagem">Mensagem</label>
+          <textarea
+            name="mensagem"
+            id="mensagem"
+            rows="5"
+            placeholder="Digite sua mensagem"
+          ></textarea>
+        </div>
+        <div>
+          <p>
+            <label class="options">Quais linguagens você sabe?</label>
+            <input type="checkbox" name="linguagens" id="HTML" value="html" />
+            <label for="HTML">HTML</label>
+            <input type="checkbox" name="linguagens" id="CSS" value="css" />
+            <label for="CSS">CSS</label>
+            <input
+              type="checkbox"
+              name="linguagens"
+              id="JAVASCRIPT"
+              value="javascript"
+            />
+            <label for="JAVASCRIPT">JAVASCRIPT</label>
+          </p>
+        </div>
+        <div>
+          <p>
+            <label class="options">Qual linguagem você prefere?</label>
+            <input type="radio" name="linguagens" id="html" value="html" />
+            <label for="html">HTML</label>
+            <input type="radio" name="linguagens" id="css" value="css" />
+            <label for="css">CSS</label>
+            <input
+              type="radio"
+              name="linguagens"
+              id="javascript"
+              value="javascript"
+            />
+            <label for="javascript">JAVASCRIPT</label>
+          </p>
+        </div>
+        <div>
+          <p>
+            <label class="options">Qual sua cor favorita</label>
+            <select>
+              <option value="azul" selected>Azul</option>
+              <option value="verde">Verde</option>
+              <option value="vermelho">Vermelho</option>
+            </select>
+          </p>
+        </div>
+        <div>
+          <p>
+            <input type="submit" />
+          </p>
+        </div>
+      </form>
+    </article>
+  </section>
+  <footer>
+    <p>Desenvolvido por Miguel</p>
+  </footer>
+</body>

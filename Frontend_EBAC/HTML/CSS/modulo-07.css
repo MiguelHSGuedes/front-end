@@ -1,0 +1,153 @@
+/* Importando CSS de tabelas */
+
+@import url("modulo-07-tabelas.css");
+/*
+Herança
+  1. Sobreposição / Sobreescreve
+  2. Aplica a última regra
+  3. Prioriza regras específicas (com seletores mais próximos)
+  4. Se aplica a todas as propriedades
+*/
+html {
+  font-family: sans-serif;
+  color: #333333;
+}
+
+p {
+  color: #454545;
+}
+
+header p {
+  color: #fff
+    /* flag !important, vai sinalizar ao navegador que esta
+  não deve ser sobreescrita, porém ela ainda vai ter prioridade menor que regras 
+  mais específicas */;
+  font-size: 1.5rem;
+}
+
+/* Combinadores
+
+Elementos: 
+Filha >  (pode ser omitido pelo espaço)
+irmã + (adjacente, que vêm logo em seguida)
+irmã ~ (geral, todos os que vem após o elemento de referência)
+pseudo-classes :
+
+Seletor decendent (espaço), se aplica para todos os elementos que estiverem 
+dentro da tag superior
+*/
+
+header h2 {
+  font-weight: 100px;
+}
+
+/* combinador > (filhos), se aplica somente aos elementos que são filhos
+diretos do elemento pai */
+
+header > h2 {
+  font-weight: 600px;
+}
+
+h2 + p {
+  background-color: #ff0;
+  color: #333;
+}
+
+h2 ~ h5 {
+  font-size: 1.2rem;
+}
+
+div ~ p {
+  text-transform: uppercase;
+}
+
+/* pseudo elementos : */
+
+a {
+  color: #555555;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+a:hover {
+  color: #009;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #f00;
+}
+
+a:active {
+  background: #00f;
+}
+
+/*
+Tipografia
+*/
+
+html {
+  font-family: "Times New Roman", Times, serif;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: bold;
+  font-family: "limelight", cursive;
+}
+
+p {
+  font-weight: normal;
+  font-size: 1.4rem;
+}
+
+li {
+  letter-spacing: 0.05rem;
+  font-family: sans-serif;
+  line-height: 1.5;
+  padding-left: 10px;
+}
+
+h3 {
+  font: italic bold 1.5rem/2 sans-serif;
+}
+
+/*
+Cores
+*/
+
+body {
+  background: url(/Frontend_EBAC/HTML/imagens/pattern.png), center top, #000000;
+}
+
+section {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+p {
+  color: blue;
+  color: #034589;
+}
+
+footer {
+  background-color: #034589;
+}
+
+footer p {
+  color: #fff;
+}
+
+.navegacao {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.navegacao li:hover {
+  background-color: rgba(150, 150, 200, 0.4);
+  border-radius: 10px;
+}
+
+.navegacao li a {
+  color: #5553ca;
+  font-size: 1.4rem;
+}

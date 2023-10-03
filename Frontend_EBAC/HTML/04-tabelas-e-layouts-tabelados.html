@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head lang="pt-BR">
+  <meta charset="utf-8" />
+  <title>Tabelas e Layouts tabelados</title>
+</head>
+<body>
+  <h1>Tabelas e Layouts tabelados</h1>
+  <table border="1" width="100%">
+    <thead>
+      <tr>
+        <th>Titulo A</th>
+        <th>Titulo B</th>
+        <th>Titulo C</th>
+      </tr>
+      <tr align="center">
+        <td colspan="3">Cabeçalho da tabela</td>
+      </tr>
+    </thead>
+    <tbody align="center">
+      <tr>
+        <td>1A</td>
+        <td>1B</td>
+        <td>1C</td>
+      </tr>
+      <tr>
+        <td>2A</td>
+        <td>2B</td>
+        <td>2C</td>
+      </tr>
+      <tr>
+        <td>3A</td>
+        <td colspan="2">3BC</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td align="center" colspan="3">Rodapé da tabela</td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <h2>Tabela como layout</h2>
+  <table width="600px">
+    <tr>
+      <td height="60" align="center" colspan="4" bgcolor="#BBBCCEE">
+        Cabeçalho
+      </td>
+    </tr>
+    <tr align="center" height="300px">
+      <td bgcolor="#BBBDDEE" width="20px"></td>
+      <td bgcolor="#DDDDD">Coluna 1</td>
+      <td bgcolor="#EEEEE">Coluna 2</td>
+      <td bgcolor="#BBBDDEE" width="20px"></td>
+    </tr>
+    <tr>
+      <td height="60" bgcolor="#BBEE" align="center" colspan="4">Rodapé</td>
+    </tr>
+  </table>
+</body>
