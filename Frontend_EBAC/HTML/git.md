@@ -54,3 +54,16 @@ git checkout Dev (Muda para a branch Dev)
 ### Merge
 
 Mescla de branchs
+Você pode precisar resolver conflitos manualmente
+git merge main
+
+### pull Requests
+
+Mescla de branchs no repositório
+Permite code review
+o repositório resolve os conflitos automaticamente
+
+### Configurar Git Flow
+
+git flow init
+git flow feature start "nome-da-feature"
