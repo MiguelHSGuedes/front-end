@@ -23,6 +23,14 @@ Linux (apt-get): sudo apt-get intall git
 
 ## Commits
 
+Informação da alteração
+
+- após testado todo o seu código
+- git add " \* "
+- git commit -m "mensagem"
+- git push (enviar alterações para o repositório GitHub)
+- git pull (puxar / trazer alterações do do GitJub para sua máquina)
+
 informação de alteração
 
 - Após ter testado todo seu código
