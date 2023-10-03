@@ -38,3 +38,12 @@ informação de alteração
 ## Git Flow
 
 -Fluxo do Git
+
+### Branchs
+
+são ramificações / versões paralelas
+
+- main/ master (vai para produção, quando o projeto é publicado)
+- develop (finalidade de desenvolvimento / teste)
+- DOD Definition of done: critérios de aceite
+- versionamento 0.1.10
