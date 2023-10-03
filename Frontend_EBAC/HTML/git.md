@@ -47,3 +47,10 @@ são ramificações / versões paralelas
 - develop (finalidade de desenvolvimento / teste)
 - DOD Definition of done: critérios de aceite
 - versionamento 0.1.10
+
+git checkout -b Dev (Cria uma branch chamada Dev)
+git checkout Dev (Muda para a branch Dev)
+
+### Merge
+
+Mescla de branchs
