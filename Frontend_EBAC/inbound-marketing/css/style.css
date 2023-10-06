@@ -27,6 +27,7 @@ body {
 
 .container img {
   width: 100%;
+  margin-bottom: 20px;
 }
 
 header {
@@ -54,6 +55,7 @@ h3 {
   font-size: 1.8rem;
   color: #254159;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 h4 {
@@ -72,6 +74,7 @@ p {
 
 ul {
   margin-left: 30px;
+  margin-bottom: 10px;
 }
 
 ul li {
@@ -133,4 +136,24 @@ footer p {
 footer small {
   font-size: 80%;
   display: block;
+}
+
+.cognito {
+  margin: 20px;
+  padding: 0px;
+}
+.cog-branding--minimal,
+html .cog-branding--minimal *,
+:root:root:root:root:root .cog-branding--minimal,
+:root:root:root:root:root .cog-branding--minimal * {
+  visibility: hidden !important;
+}
+
+html .cog-abuse,
+:root:root:root:root:root .cog-abuse {
+  visibility: hidden !important;
+}
+
+.cog-branding__powered {
+  visibility: !important;
 }
