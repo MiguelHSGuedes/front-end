@@ -161,16 +161,30 @@ footer small {
   font-size: 1.5rem;
 }
 
+#tenho-interesse .cog-heading {
+  color: #254159;
+}
+
+#tenho-interesse .cog-label,
+.cog-label {
+  color: #254159;
+}
+
 #tenho-interesse h2 {
   font-size: 2.2rem;
   color: #254159;
   margin-bottom: 20px;
   margin-top: 20px;
 }
+
+#tenho-interesse .cog-1 {
+  --primary: #254159;
+}
+
 .cognito {
   margin: 20px;
   padding: 0px;
-  height: 470px !important;
+  height: 450px !important;
   overflow: hidden !important;
 }
 
